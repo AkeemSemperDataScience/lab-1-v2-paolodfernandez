@@ -15,14 +15,14 @@ def lab1Question2(name):
         elif is_odd % 2 == 0:
             print("False")
     else: return "None"
-lab1Question2()
+lab1Question2(2)
 
 def lab1Question3(input_string, input_number):
     # Take in two inputs - a string and a number
     # Return the character of the string in the index given by number.  If this index does not exist, then return -1.
-    character_at = input_string[input_number]
+    character_at = -1
+
     return character_at
-lab1Question3()
 
 def lab1Question4(file_name):
     # Take an input of a file name. 
