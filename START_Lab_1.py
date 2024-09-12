@@ -3,8 +3,8 @@ def lab1Question1(input_gb):
     num_bytes = None
     # Do the work here
     # The solution to this goes here (and in all of them below...)
+    num_bytes= input_gb * 1000000000
     # Set the variable num_bytes to the answer and return it
-
     return num_bytes
 
 def lab1Question2(name):
