@@ -8,7 +8,7 @@ def lab1Question1(input_gb):
 lab1Question1(1)
 
 def lab1Question2(name):
-    if type(name) == str:
+    if type(name) == str is True:
         is_odd = len(name)
         if is_odd % 2 == 1:
             print("True")
