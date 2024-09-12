@@ -15,7 +15,6 @@ def lab1Question2(name):
         elif is_odd % 2 == 0:
             print("False")
     else: return "None"
-lab1Question2(2)
 
 def lab1Question3(input_string, input_number):
     # Take in two inputs - a string and a number
