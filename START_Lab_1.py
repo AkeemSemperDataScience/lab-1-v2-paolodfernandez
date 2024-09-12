@@ -8,14 +8,14 @@ def lab1Question1(input_gb):
 lab1Question1(1)
 
 def lab1Question2(name):
-    # Take an input of a name, return True if there is an odd number of characters in the name, False otherwise
-    # Return None if the input is not a string
-    is_odd = len(name)
-    if is_odd % 2 == 1:
-        print("True")
-    else: print("False")
-    return is_odd
-lab1Question2("Paolo")
+    if type(name) == str:
+        is_odd = len(name)
+        if is_odd % 2 == 1:
+            print("True")
+        elif is_odd % 2 == 0:
+            print("False")
+    else: return "None"
+lab1Question2(2)
 
 def lab1Question3(input_string, input_number):
     # Take in two inputs - a string and a number
