@@ -29,11 +29,9 @@ def lab1Question4(file_name):
     # Take an input of a file name. 
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
-    for numbers in file_name:
-        if numbers.isnumeric():
-            num = int(numbers)
-            list_of_nums.append(numbers)
-            
+    with open(file_name) as f:
+        list_of_nums = [int(line for line in f)]
+    list_of_nums.append()
     return list_of_nums
 
 def lab1Question5(list_numbers):
