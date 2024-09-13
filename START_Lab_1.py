@@ -26,8 +26,11 @@ def lab1Question4(file_name):
     # Take an input of a file name. 
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
-
+    for numbers in file_name:
+        if numbers in "123456789":
+            list_of_nums.append(numbers)
     return list_of_nums
+lab1Question4()
 
 def lab1Question5(list_numbers):
     # Take an input of a list of numbers
