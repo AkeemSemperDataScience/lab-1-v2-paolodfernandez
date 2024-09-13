@@ -30,10 +30,20 @@ def lab1Question4(file_name):
     # Take an input of a file name. 
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
-    file_name = open()
-    for line in file_name:
-        list_of_nums.append(int(line.rstrip()))
-    file_name.close()
+    try:
+        with open(file_name, 'r') as file:
+            for line in file:
+                tokens = line.split()
+                for token in tokens:
+                    try:
+                        number = float(token)
+                        list_of_nums.append(number)
+                    except ValueError:
+                        continue
+    except FileNotFoundError:
+        print(f"File '{file_name}' not found.")
+    except Exception as e:
+        print(f"An error occured: {e}")
     return list_of_nums
 
 def lab1Question5(list_numbers):
