@@ -38,8 +38,15 @@ def lab1Question5(list_numbers):
     # Take an input of a list of numbers
     # Return the mode from that list. 
     mode_of_list = None
-
-    return mode_of_list
+    if not list_numbers:
+        return None
+    count = count(list_numbers)
+    max_count = max(count.values())
+    mode_of_list = [num for num, freq in count.items() if freq == max_count]
+    if len(mode_of_list) == 1:
+        return mode_of_list[0]
+    else:
+        return mode_of_list
 
 def lab1Question6(quarters, dimes, nickels, pennies):
     # Take in 4 inputs - the number of quarters, dimes, nickels, and pennies in a handful
