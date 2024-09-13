@@ -8,11 +8,13 @@ def lab1Question1(input_gb):
 lab1Question1(1)
 
 def lab1Question2(name):
-    if isinstance(name, str):
-        if (len(name)) % 2 == 1:
-            print(True)
-        else: print(False)
-    else: print(None)
+    is_odd = None
+    length = len(name)
+    if length % 2 == 1:
+        is_odd = True
+    else: is_odd = False
+
+    return is_odd
 
 def lab1Question3(input_string, input_number):
     # Take in two inputs - a string and a number
