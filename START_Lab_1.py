@@ -29,7 +29,8 @@ def lab1Question4(file_name):
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
     for numbers in file_name:
-        if numbers in "123456789":
+        if numbers.isnumeric():
+            num = int(numbers)
             list_of_nums.append(numbers)
             
     return list_of_nums
