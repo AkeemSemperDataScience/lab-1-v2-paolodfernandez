@@ -37,11 +37,10 @@ def lab1Question4(file_name):
 def lab1Question5(list_numbers):
     # Take an input of a list of numbers
     # Return the mode from that list. 
-    mode_of_list = None
     if not list_numbers:
         return None
     frequency = {}
-    for num in frequency:
+    for num in list_numbers:
         frequency[num] += 1
     else:
         frequency[num] = 1
