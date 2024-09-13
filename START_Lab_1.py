@@ -53,6 +53,11 @@ def lab1Question6(quarters, dimes, nickels, pennies):
     # Return the total amount in dollars
     # For example, if the handful contains 4 quarters, 3 dimes, 2 nickels, and 1 penny, the function should return 1.41.
     total = None
+    value_quarter = 0.25
+    value_dime = 0.10
+    value_nickel = 0.05
+    value_penny = 0.01
+    total = (quarters * value_quarter + dimes * value_dime + nickels * value_nickel + pennies * value_penny)
     return total
 
 ## Example of calling a function to test these... 
