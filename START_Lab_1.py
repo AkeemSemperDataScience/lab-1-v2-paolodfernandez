@@ -10,9 +10,9 @@ lab1Question1(1)
 def lab1Question2(name):
     is_odd = None
     length = len(name)
-    if length % 2 == 1:
-        is_odd = True
-    else: is_odd = False
+    if length % 2 == 0:
+        is_odd = False
+    else: is_odd = True
 
     return is_odd
 
