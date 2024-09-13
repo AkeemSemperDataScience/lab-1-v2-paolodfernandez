@@ -13,7 +13,6 @@ def lab1Question2(name):
             print(True)
         else: print(False)
     else: print(None)
-lab1Question2()
 
 def lab1Question3(input_string, input_number):
     # Take in two inputs - a string and a number
