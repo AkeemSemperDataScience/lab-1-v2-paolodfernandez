@@ -8,7 +8,7 @@ def lab1Question1(input_gb):
 lab1Question1(1)
 
 def lab1Question2(name):
-    length = len(name)
+    length = len(str(name))
     if length % 2 == 1:
         is_odd = True
     elif length % 2 == 0: 
