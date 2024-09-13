@@ -37,19 +37,9 @@ def lab1Question4(file_name):
 def lab1Question5(list_numbers):
     # Take an input of a list of numbers
     # Return the mode from that list. 
-    if not list_numbers:
-        return None
-    frequency = {}
-    for num in list_numbers:
-        frequency[num] += 1
-    else:
-        frequency[num] = 1
-    max_count = max(frequency.values())
-    mode_of_list = [num for num, freq in frequency.items() if freq == max_count]
-    if len(mode_of_list) == 1:
-        return mode_of_list[0]
-    else:
-        return mode_of_list
+   import statistics
+   mode_of_list = statistics.mode(list_numbers)
+   return mode_of_list
 
 def lab1Question6(quarters, dimes, nickels, pennies):
     # Take in 4 inputs - the number of quarters, dimes, nickels, and pennies in a handful
