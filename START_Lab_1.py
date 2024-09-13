@@ -40,9 +40,13 @@ def lab1Question5(list_numbers):
     mode_of_list = None
     if not list_numbers:
         return None
-    count = count(list_numbers)
-    max_count = max(count.values())
-    mode_of_list = [num for num, freq in count.items() if freq == max_count]
+    frequency = {}
+    for num in frequency:
+        frequency[num] += 1
+    else:
+        frequency[num] = 1
+    max_count = max(frequency.values())
+    mode_of_list = [num for num, freq in frequency.items() if freq == max_count]
     if len(mode_of_list) == 1:
         return mode_of_list[0]
     else:
